@@ -16,7 +16,7 @@ export default function TopTrack() {
       }).then((data) => {
         setTopTracks(data.toptracks.track)
       });
-  }, []);
+  }, [fetchAPI]);
 
   return (
     <div className="home">
