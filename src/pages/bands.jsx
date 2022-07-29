@@ -40,7 +40,7 @@ export default function Bands() {
                                                     <div className="card-body">
                                                         <h4 className="card-title rock"><b>{name}</b></h4>
                                                         <p><b><a href={url}>Check it out!</a></b></p>
-                                                        <p><b><Link to={name}> Check Top Tracks!</Link></b></p>
+                                                        <p><b><Link to={name.replace('/', ' ')}> Check Top Tracks!</Link></b></p>
                                                     </div>
                                                 </div>
                                             </div>
