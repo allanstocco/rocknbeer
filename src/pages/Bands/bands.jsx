@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from "react-router-dom"
 
-import { BandsForm } from "../components"
+import { BandsForm } from "../../components"
 
 export default function Bands() {
     const [bands, setBands] = useState([]);
@@ -35,10 +35,8 @@ export default function Bands() {
             <div className="home">
                 <div className="container">
                     <div className="row align-items-center my-5">
-                        <div className='d-inline'>
-                            <h1 className="font-weight-light">Bands - Rock'n Roll</h1>
-                            <BandsForm onSubmit={changeArtist} />
-                        </div>
+                        <h1 className="font-weight-light">Bands - Rock'n Roll</h1>
+                        <BandsForm onSubmit={changeArtist} />
                         <div className="container mt-4" >
                             <div className="row d-flex justify-content-around">
                                 {

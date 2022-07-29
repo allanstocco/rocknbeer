@@ -1,8 +1,9 @@
 export { default as Navigation } from "../layout/navigation";
 export { default as Footer } from "../layout/footer";
 export { default as Home } from "../pages/home";
-export { default as Beers } from "../pages/beers";
-export { default as Beer } from "../pages/beer";
-export { default as Bands } from "../pages/bands";
-export { default as TopTrack } from "../pages/topTrack";
+export { default as Beers } from "../pages/Beers/beers";
+export { default as Beer } from "../pages/Beers/beer";
+export { default as Bands } from "../pages/Bands/bands";
+export { default as TopTrack } from "../pages/Bands/topTrack";
 export { default as BandsForm } from "../forms/bandsForm";
+export { default as SearchArtist } from "../pages/Bands/searchArtist";

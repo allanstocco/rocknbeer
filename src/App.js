@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import './App.css';
 
-import { Navigation, Footer, Home, Beers, Bands, Beer, TopTrack } from "./components";
+import { Navigation, Footer, Home, Beers, Bands, Beer, TopTrack, SearchArtist } from "./components";
 
 
 function App() {
@@ -18,6 +18,7 @@ function App() {
                 <Route path="/bands">
                     <Route path="/bands" element={<Bands />}></Route>
                     <Route path=":str" element={<TopTrack />}></Route>
+                    <Route path="/bands/artist/:str" element={<SearchArtist />}></Route>
                 </Route>
             </Routes>
             <Footer />
