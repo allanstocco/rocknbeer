@@ -35,7 +35,7 @@ export default function Bands() {
             <div className="home">
                 <div className="container">
                     <div className="row align-items-center my-5">
-                        <h1 className="font-weight-light">Bands - Rock'n Roll</h1>
+                        <h1 className="font-weight-light text-center">Bands</h1>
                         <BandsForm onSubmit={changeArtist} />
                         <div className="container mt-4" >
                             <div className="row d-flex justify-content-around">

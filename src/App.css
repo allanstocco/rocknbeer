@@ -30,3 +30,11 @@ a {
 .img-sg-beer {
     height: 70%;
 }
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.navbar {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

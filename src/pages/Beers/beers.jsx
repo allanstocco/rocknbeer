@@ -29,7 +29,7 @@ const Beers = () => {
                 <div className="container">
                     <div className="row align-items-center my-5">
                         <div className="col-lg-5"></div>
-                        <h1 className="font-weight-light">Beers</h1>
+                        <h1 className="font-weight-light text-center">Beers</h1>
                         <div className="container mt-4" >
                             <div className="row d-flex justify-content-around">
                                 {
