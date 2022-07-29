@@ -1,11 +1,19 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from "react-router-dom"
 
+import { BandsForm } from "../components"
+
 export default function Bands() {
     const [bands, setBands] = useState([]);
 
+    let api_url = `https://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist=LedZeppelin&api_key=47e8b99b74bb4160f7a429614b9b544e&format=json`
+
+    function changeArtist(artist) {
+        api_url = `https://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist=${artist}&api_key=47e8b99b74bb4160f7a429614b9b544e&format=json`
+        getBands()
+    }
+
     async function getBands() {
-        const api_url = 'https://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist=LedZeppelin&api_key=47e8b99b74bb4160f7a429614b9b544e&format=json'
         try {
             const response = await fetch(api_url)
             const data = await response.json()
@@ -27,7 +35,10 @@ export default function Bands() {
             <div className="home">
                 <div className="container">
                     <div className="row align-items-center my-5">
-                        <h1 className="font-weight-light">Bands - Rock'n Roll</h1>
+                        <div className='d-inline'>
+                            <h1 className="font-weight-light">Bands - Rock'n Roll</h1>
+                            <BandsForm onSubmit={changeArtist} />
+                        </div>
                         <div className="container mt-4" >
                             <div className="row d-flex justify-content-around">
                                 {

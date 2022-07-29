@@ -5,3 +5,4 @@ export { default as Beers } from "../pages/beers";
 export { default as Beer } from "../pages/beer";
 export { default as Bands } from "../pages/bands";
 export { default as TopTrack } from "../pages/topTrack";
+export { default as BandsForm } from "../forms/bandsForm";
